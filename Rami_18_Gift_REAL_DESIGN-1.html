@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>هدية رامي | 18</title>
+<style>
+:root{--bg:#090509;--panel:#120912;--pink:#ff6f9d;--soft:#ffb2c8;--line:#7c3b55;--text:#f8e8ee}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",Tahoma,serif}
+body{overflow-x:hidden;background:radial-gradient(circle at 50% 8%,#6f193733,transparent 34%),#090509}
+.app{min-height:100vh;display:flex;justify-content:center;padding:12px}.phone{width:min(100%,520px);min-height:calc(100vh - 24px);background:linear-gradient(#170b16,#090509);border:1px solid #633047;border-radius:18px;box-shadow:0 25px 90px #000;overflow:hidden;position:relative}
+.screen{min-height:calc(100vh - 24px);padding:22px 18px 34px;display:none;flex-direction:column;align-items:center;justify-content:center;position:relative}.screen.active{display:flex}
+.decor{position:absolute;inset:0;pointer-events:none;opacity:.55;background-image:radial-gradient(circle,#ff87ad 1px,transparent 1.5px),radial-gradient(circle,#ff87ad 1px,transparent 1.5px);background-size:100px 100px,160px 160px;background-position:15px 20px,70px 80px}
+.kicker{font-size:11px;letter-spacing:3px;color:#d985a0;text-align:center}.title{font-size:42px;line-height:1.1;color:#ffd2df;text-align:center;margin:10px 0 2px;text-shadow:0 0 20px #ff4d8629}.subtitle{font-size:24px;color:#ff83a9;text-align:center;font-style:italic}
+.intro{max-width:420px;text-align:center;line-height:2;color:#dbc5cd;font-size:17px}.btn{border:1px solid #ff7da5;background:linear-gradient(#ff6d9c,#e84f80);color:#fff;border-radius:30px;padding:12px 30px;font:inherit;cursor:pointer;box-shadow:0 0 25px #ff4c8338;margin-top:12px}
+.cake{width:240px;height:190px;position:relative;margin:12px auto 16px}.cake .plate{position:absolute;bottom:12px;left:22px;width:196px;height:22px;border-radius:50%;background:#3b1529;box-shadow:0 0 30px #ff527c44}.cake .body{position:absolute;bottom:28px;left:48px;width:144px;height:86px;background:linear-gradient(#ff6c98,#8d274e);border:2px solid #ffb0c4;border-radius:16px 16px 24px 24px;box-shadow:0 10px 20px #000}.cake .cream{position:absolute;bottom:98px;left:46px;width:148px;height:30px;border-radius:50%;background:#ffe4ec;border:2px solid #ff9fba}.cake .num{position:absolute;bottom:54px;left:0;right:0;text-align:center;font-size:70px;font-weight:bold;color:#ffd2df;text-shadow:0 0 18px #ff5f8d}.flame{position:absolute;top:2px;width:10px;height:20px;border-radius:50% 50% 45% 45%;background:#ffd36e;box-shadow:0 0 15px #ffae58}.f1{left:91px}.f2{left:116px}.f3{left:141px}
+.codebox{width:min(100%,400px);border:1px solid #71364e;background:#100810;padding:28px 18px;border-radius:12px;text-align:center;box-shadow:0 20px 60px #000}.digits{display:flex;direction:ltr;justify-content:center;gap:9px;margin:20px 0}.digit{width:52px;height:55px;background:#090609;border:1px solid #b05272;color:#fff;border-radius:8px;text-align:center;font-size:25px}.codeerr{height:24px;color:#ff89aa;font-size:13px}
+.stargrid{width:min(100%,420px);display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin:20px auto}.star{aspect-ratio:1;border:0;background:none;color:#ff94b0;position:relative;cursor:pointer;filter:drop-shadow(0 0 7px #ff5d8d55);transition:.18s}.star:before{content:'★';position:absolute;inset:0;display:grid;place-items:center;font-size:43px;line-height:1;color:#ff729d;text-shadow:0 0 12px #ff5c8c}.star span{position:relative;z-index:2;font-size:11px;color:#fff;font-family:Arial,sans-serif}.star:hover{transform:scale(1.1)}
+.bottom{text-align:center;color:#a98e99;font-size:13px;line-height:1.8}.heart{color:#ff789f}
+.modal{position:fixed;inset:0;background:#040205f5;display:none;align-items:center;justify-content:center;padding:16px;z-index:20}.modal.open{display:flex}.modalbox{width:min(100%,470px);max-height:92vh;overflow:auto;background:#100810;border:1px solid #743750;border-radius:16px;box-shadow:0 25px 100px #000}.scene{height:265px;position:relative;overflow:hidden;background:linear-gradient(180deg,#12071b 0%,#241025 62%,#0a080d 100%);border-bottom:1px solid #603047}.scene:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 72% 25%,#ff9eb733 0 2px,transparent 3px),radial-gradient(circle at 22% 18%,#ff9eb733 0 1px,transparent 2px),radial-gradient(circle at 40% 35%,#ff9eb733 0 1px,transparent 2px),radial-gradient(circle at 88% 48%,#ff9eb733 0 1px,transparent 2px)}
+.scene .moon{position:absolute;width:70px;height:70px;border-radius:50%;right:38px;top:28px;background:#ffdce6;box-shadow:0 0 30px #ffb0c055}.scene .moon:after{content:'';position:absolute;width:70px;height:70px;border-radius:50%;right:-18px;top:-8px;background:#160a19}.city{position:absolute;bottom:0;left:0;right:0;height:85px;background:linear-gradient(90deg,transparent 0 4%,#08060c 4% 9%,transparent 9% 13%,#08060c 13% 21%,transparent 21% 25%,#08060c 25% 32%,transparent 32% 39%,#08060c 39% 45%,transparent 45% 51%,#08060c 51% 58%,transparent 58% 65%,#08060c 65% 72%,transparent 72% 80%,#08060c 80% 89%,transparent 89%)}
+.scene .bed{position:absolute;bottom:22px;left:12%;width:76%;height:70px;border-radius:50% 50% 8px 8px;background:#351529;box-shadow:inset 0 10px #4b1d35}.scene .pillow{position:absolute;bottom:58px;left:18%;width:28%;height:30px;border-radius:15px;background:#6d304b}.scene .rose{position:absolute;right:14%;bottom:70px;font-size:40px}.scene .letter{position:absolute;left:18%;bottom:45px;width:120px;height:75px;background:#ead9d8;transform:rotate(-6deg);color:#6b2742;display:grid;place-items:center;font-size:28px}.scene .camera{position:absolute;left:14%;bottom:45px;width:125px;height:80px;background:#17151b;border-radius:14px;box-shadow:0 0 0 5px #2b2630}.scene .lens{position:absolute;left:40px;top:16px;width:48px;height:48px;border-radius:50%;background:#5b3049;border:7px solid #0c0b10}.scene .book{position:absolute;left:12%;bottom:35px;width:170px;height:100px;background:#2c1327;transform:rotate(-5deg);box-shadow:0 0 0 2px #9c5871}.scene .sea{position:absolute;left:0;right:0;bottom:0;height:115px;background:repeating-linear-gradient(170deg,#140b16 0 15px,#33132b 15px 20px)}.scene .person{position:absolute;bottom:70px;left:50%;width:25px;height:70px;background:#08070b;border-radius:20px 20px 4px 4px;transform:translateX(-50%)}.scene .person:before{content:'';position:absolute;width:28px;height:28px;border-radius:50%;background:#08070b;top:-18px;left:-1px}.scene .kitty{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-size:90px}.scene .room{position:absolute;inset:0;background:linear-gradient(90deg,#09070c 0 18%,transparent 18% 82%,#09070c 82%)}
+.modalcontent{padding:20px}.modalnum{color:#ff789f;font-size:13px;letter-spacing:2px;text-align:center}.modaltext{font-size:18px;line-height:2;text-align:center;color:#eadbe1}.close{display:block;margin:15px auto 2px;background:none;border:1px solid #7f4058;color:#ef91aa;border-radius:24px;padding:9px 20px;font:inherit;cursor:pointer}
+@media(max-width:430px){.stargrid{grid-template-columns:repeat(6,1fr);gap:4px}.star:before{font-size:36px}.star span{font-size:9px}.scene{height:235px}.title{font-size:38px}}
+</style>
+</head>
+<body>
+<div class="app"><main class="phone">
+<section id="welcome" class="screen active"><div class="decor"></div>
+<div class="cake"><div class="flame f1"></div><div class="flame f2"></div><div class="flame f3"></div><div class="cream"></div><div class="body"></div><div class="num">18</div><div class="plate"></div></div>
+<div class="kicker">29 • A LITTLE SECRET • 18</div><div class="title">عيد ميلاد سعيد</div><div class="subtitle">حبيبي ♥</div>
+<p class="intro">18 سنة من الحكايات التي لم تبدأ كلها بعد... وهذه الصغيرة صنعتها لك خصيصاً. اضغط، وخلي الفضول يكمل الباقي.</p>
+<button class="btn" onclick="go('code')">♥ افتح هديتك</button></section>
+
+<section id="code" class="screen"><div class="decor"></div><div class="kicker">THE LITTLE SECRET</div><div class="title" style="font-size:30px">قبل أن تبدأ الرحلة..</div><p class="intro">هناك أربعة أرقام فقط بينك وبين 18 رسالة صغيرة.</p>
+<div class="codebox"><div class="digits"><input class="digit" maxlength="1" inputmode="numeric"><input class="digit" maxlength="1" inputmode="numeric"><input class="digit" maxlength="1" inputmode="numeric"><input class="digit" maxlength="1" inputmode="numeric"></div><button class="btn" onclick="unlock()">♥ أدخل الرمز</button><div class="codeerr" id="codeerr"></div></div></section>
+
+<section id="stars" class="screen"><div class="decor"></div><div class="kicker">CHAPTER 18</div><div class="title" style="font-size:31px">هنا تبدأ رحلتنا..</div><p class="intro" style="margin-top:4px">اضغط على النجمة لفتح رسالتك.</p><div class="stargrid" id="stargrid"></div><div class="bottom">18 نجمة • 18 رسالة<br><span class="heart">♥</span> وكلها لك وحدك <span class="heart">♥</span></div></section>
+</main></div>
+
+<div class="modal" id="modal"><div class="modalbox"><div class="scene" id="scene"><div class="moon"></div><div class="city"></div></div><div class="modalcontent"><div class="modalnum" id="modalnum"></div><div class="modaltext" id="modaltext"></div><button class="close" onclick="closeModal()">رجوع للنجوم ♥</button></div></div></div>
+<script>
+const msgs=[
+'فيك كل ما أحب.. أنت أكثر من مجرد شخص، أنت راحتي وطمأنينتي. ♥',
+'أنت صوتي المفضل.. حتى في صمتي، أسمع في قلبي دفء صوتك وضحكتك.',
+'أنت حلمي.. كل خططي للمستقبل تتضمنك، لأنك جزء من كل حلم أريده.',
+'أنت قوتي.. في لحظات ضعفي تكون أنت قوتي وتعيدني للحياة.',
+'أنت تفهمني.. دون أن أتكلم، تقرأ أفكاري قبل أن أنطقها.',
+'أنت أماني.. معك أشعر أن العالم مكان آمن.',
+'أنت المغامرة.. كل لحظة معك هي مغامرة جديدة، وكل يوم أكتشف فيك شيئاً أجمل.',
+'أنت حكايتي المفضلة.. كل حديث معك فصل جديد من رواية لا أريد لها أن تنتهي.',
+'أنت تفاصيلـي الجميلة.. من رسائلك الصغيرة إلى اهتمامك، كلها تفاصيل أحبها.',
+'أنت لطيف.. لطفك يجعلني أشعر أنك تحميني حتى من أفكاري المزعجة.',
+'أنت مستقبلي.. أريد أن أعيش كل هذه الأحلام وما هو أجمل منها معك.',
+'أنت شغفي.. تجعل الحياة ألطف من كل شيء، فقط لأنك بجانبي.',
+'أنت سعادتي.. وجودك في حياتي هو أجمل ما حدث لي.',
+'أنت اختياري.. ولن أخفي عنك شيئاً، لأنك أنت كل شيء.',
+'أنت أمنيتي.. أتمنى أن تبقى معي دائماً، ولا تغيب عني أبداً.',
+'أنت ضحكتي.. حتى في أسوأ أيامي تجعلني أضحك وتعيد الحب إلى قلبي.',
+'أنت كل شيء جميل.. في حياتي، في فكري، في قلبي، وفي تفاصيل يومي.',
+'وأخيراً... يا راميتي، في هذا اليوم لا أريد أن أقول لك عيد ميلاد سعيد فقط، بل أريدك أن تعرف لماذا يعني لي هذا اليوم الكثير. في التاسع والعشرين وُلد شخص لم أكن أعرف أن طريقه سيقود يوماً إلى قلبي، ثم صار وجوده من أجمل تفاصيل أيامي. ♥\n\nأحب فيك تفاصيلك الصغيرة، صوتك، ضحكتك، اهتمامك، وكل لحظة عادية تصبح جميلة لأنك فيها. وأتمنى أن تكون سنتك الثامنة عشرة بداية فصلٍ أجمل من كل ما مضى، وأن تحمل لك الحياة طمأنينةً وأحلاماً تتحقق وذكريات تستحق أن تُحفظ.\n\nقد لا أستطيع أن أضع كل ما أشعر به داخل هدية، لذلك تركت لك هذه الكلمات: أنا سعيدة لأنني عرفتك، وسعيدة لأن تاريخ ميلادك صار تاريخاً عزيزاً عليّ. كل عام وأنت بخير يا حبيبي، وكل عام وأنت أقرب إلى كل ما تتمنى. 🤍'
+];
+const scenes=['bed','camera','eye','city','letter','cat','sea','room','camera','kitty','city','game','heart','letter','city','kitty','room','cake'];
+const grid=document.getElementById('stargrid');
+for(let i=0;i<18;i++){const b=document.createElement('button');b.className='star';b.innerHTML='<b>★</b><span>'+(i+1)+'</span>';b.onclick=()=>openStar(i);grid.appendChild(b)}
+function go(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0)}
+function unlock(){const v=[...document.querySelectorAll('.digit')].map(x=>x.value).join('');if(v==='0929')go('stars');else document.getElementById('codeerr').textContent='الرمز غير صحيح... جرّب مرة أخرى ♥'}
+document.querySelectorAll('.digit').forEach((x,i)=>x.addEventListener('input',()=>{if(x.value&&i<3)x.nextElementSibling.focus()}));
+function openStar(i){document.getElementById('modalnum').textContent='★ النجمة '+(i+1)+' ★';document.getElementById('modaltext').textContent=msgs[i];const s=document.getElementById('scene');s.className='scene';s.innerHTML='<div class="moon"></div><div class="city"></div>';if(scenes[i]==='letter'){s.innerHTML+='<div class="letter">♥</div>'}if(scenes[i]==='camera'){s.innerHTML+='<div class="camera"><div class="lens"></div></div>'}if(scenes[i]==='bed'){s.innerHTML+='<div class="bed"></div><div class="pillow"></div>'}if(scenes[i]==='sea'){s.innerHTML+='<div class="sea"></div><div class="person"></div>'}if(scenes[i]==='kitty'){s.innerHTML+='<div class="kitty">🎀</div>'}if(scenes[i]==='room'){s.innerHTML+='<div class="room"></div>'}if(scenes[i]==='cake'){s.innerHTML+='<div class="kitty">🎂</div>'}document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+</script>
+</body></html>
